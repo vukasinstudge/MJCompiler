@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 20/0/2021 17:5:21
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class Decl_list_moreclass extends Decl_list {
+
+    private Decl_list Decl_list;
+    private ClassDecl ClassDecl;
+
+    public Decl_list_moreclass (Decl_list Decl_list, ClassDecl ClassDecl) {
+        this.Decl_list=Decl_list;
+        if(Decl_list!=null) Decl_list.setParent(this);
+        this.ClassDecl=ClassDecl;
+        if(ClassDecl!=null) ClassDecl.setParent(this);
+    }
+
+    public Decl_list getDecl_list() {
+        return Decl_list;
+    }
+
+    public void setDecl_list(Decl_list Decl_list) {
+        this.Decl_list=Decl_list;
+    }
+
+    public ClassDecl getClassDecl() {
+        return ClassDecl;
+    }
+
+    public void setClassDecl(ClassDecl ClassDecl) {
+        this.ClassDecl=ClassDecl;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(Decl_list!=null) Decl_list.accept(visitor);
+        if(ClassDecl!=null) ClassDecl.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(Decl_list!=null) Decl_list.traverseTopDown(visitor);
+        if(ClassDecl!=null) ClassDecl.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(Decl_list!=null) Decl_list.traverseBottomUp(visitor);
+        if(ClassDecl!=null) ClassDecl.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Decl_list_moreclass(\n");
+
+        if(Decl_list!=null)
+            buffer.append(Decl_list.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ClassDecl!=null)
+            buffer.append(ClassDecl.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Decl_list_moreclass]");
+        return buffer.toString();
+    }
+}

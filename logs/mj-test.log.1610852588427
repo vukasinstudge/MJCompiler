@@ -1,0 +1,295 @@
+INFO  04:02:06,314 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  04:02:09,750 - #2 program
+INFO  04:02:09,750 - #48 test301
+INFO  04:02:09,750 - #10 const
+INFO  04:02:09,757 - #48 int
+INFO  04:02:09,757 - #48 nula
+INFO  04:02:09,769 - #21 =
+INFO  04:02:09,769 - #47 0
+INFO  04:02:09,770 - #23 ;
+INFO  04:02:09,776 - #10 const
+INFO  04:02:09,776 - #48 int
+INFO  04:02:09,777 - #48 jedan
+INFO  04:02:09,777 - #21 =
+INFO  04:02:09,777 - #47 1
+INFO  04:02:09,777 - #23 ;
+INFO  04:02:09,777 - #10 const
+INFO  04:02:09,777 - #48 int
+INFO  04:02:09,777 - #48 pet
+INFO  04:02:09,777 - #21 =
+INFO  04:02:09,777 - #47 5
+INFO  04:02:09,777 - #23 ;
+INFO  04:02:09,778 - #48 int
+INFO  04:02:09,778 - #48 niz
+INFO  04:02:09,778 - #43 [
+INFO  04:02:09,778 - #44 ]
+INFO  04:02:09,778 - #23 ;
+INFO  04:02:09,779 - #48 char
+INFO  04:02:09,786 - #48 nizch
+INFO  04:02:09,786 - #43 [
+INFO  04:02:09,786 - #44 ]
+INFO  04:02:09,786 - #23 ;
+INFO  04:02:09,786 - #26 {
+INFO  04:02:09,786 - #5 void
+INFO  04:02:09,786 - #48 main
+INFO  04:02:09,792 - #24 (
+INFO  04:02:09,792 - #25 )
+INFO  04:02:09,792 - #48 int
+INFO  04:02:09,792 - #48 bodovi
+INFO  04:02:09,792 - #23 ;
+INFO  04:02:09,793 - #48 bool
+INFO  04:02:09,793 - #48 bt
+INFO  04:02:09,793 - #23 ;
+INFO  04:02:09,793 - #26 {
+INFO  04:02:09,793 - #48 bodovi
+INFO  04:02:09,793 - #21 =
+INFO  04:02:09,793 - #47 0
+INFO  04:02:09,793 - #23 ;
+INFO  04:02:09,794 - #48 bodovi
+INFO  04:02:09,794 - #21 =
+INFO  04:02:09,794 - #48 sest
+INFO  04:02:09,794 - #23 ;
+INFO  04:02:09,794 - #11 if
+INFO  04:02:09,794 - #24 (
+INFO  04:02:09,801 - #48 bodovi
+INFO  04:02:09,801 - #34 >
+INFO  04:02:09,801 - #47 0
+INFO  04:02:09,814 - #25 )
+INFO  04:02:09,814 - #48 bodovi
+INFO  04:02:09,821 - #40 ++
+INFO  04:02:09,821 - #23 ;
+INFO  04:02:09,821 - #9 else
+INFO  04:02:09,821 - #48 bodovi
+INFO  04:02:09,828 - #40 ++
+INFO  04:02:09,828 - #23 ;
+INFO  04:02:09,828 - #27 }
+INFO  04:02:09,828 - #27 }
+INFO  04:02:09,829 - Program_declsmethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  Decl_list_morevar(
+    Decl_list_morevar(
+      Decl_list_moreconst(
+        Decl_list_moreconst(
+          Decl_list_singleconst(
+            ConstDecl_singlenumber(
+              TypePart(
+                Type(
+                 int
+                ) [Type]
+              ) [TypePart]
+              More_constdecl_single(
+                Single_constdecl(
+                 nula
+                  Val_constdecl_number(
+                   0
+                  ) [Val_constdecl_number]
+                ) [Single_constdecl]
+              ) [More_constdecl_single]
+            ) [ConstDecl_singlenumber]
+          ) [Decl_list_singleconst]
+          ConstDecl_singlenumber(
+            TypePart(
+              Type(
+               int
+              ) [Type]
+            ) [TypePart]
+            More_constdecl_single(
+              Single_constdecl(
+               jedan
+                Val_constdecl_number(
+                 1
+                ) [Val_constdecl_number]
+              ) [Single_constdecl]
+            ) [More_constdecl_single]
+          ) [ConstDecl_singlenumber]
+        ) [Decl_list_moreconst]
+        ConstDecl_singlenumber(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_constdecl_single(
+            Single_constdecl(
+             pet
+              Val_constdecl_number(
+               5
+              ) [Val_constdecl_number]
+            ) [Single_constdecl]
+          ) [More_constdecl_single]
+        ) [ConstDecl_singlenumber]
+      ) [Decl_list_moreconst]
+      VarDecl(
+        TypePart(
+          Type(
+           int
+          ) [Type]
+        ) [TypePart]
+        More_vardecl_single(
+          Single_vardecl_brackets(
+           niz
+          ) [Single_vardecl_brackets]
+        ) [More_vardecl_single]
+      ) [VarDecl]
+    ) [Decl_list_morevar]
+    VarDecl(
+      TypePart(
+        Type(
+         char
+        ) [Type]
+      ) [TypePart]
+      More_vardecl_single(
+        Single_vardecl_brackets(
+         nizch
+        ) [Single_vardecl_brackets]
+      ) [More_vardecl_single]
+    ) [VarDecl]
+  ) [Decl_list_morevar]
+  MethodDecl_list_single(
+    MethodDecl_varsstats(
+      MethodUnique_empty(
+        MethodType_void(
+        ) [MethodType_void]
+       main
+      ) [MethodUnique_empty]
+      VarDecl_list_more(
+        VarDecl(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_vardecl_single(
+            Single_vardecl_single(
+             bodovi
+            ) [Single_vardecl_single]
+          ) [More_vardecl_single]
+        ) [VarDecl]
+        VarDecl_list_single(
+          VarDecl(
+            TypePart(
+              Type(
+               bool
+              ) [Type]
+            ) [TypePart]
+            More_vardecl_single(
+              Single_vardecl_single(
+               bt
+              ) [Single_vardecl_single]
+            ) [More_vardecl_single]
+          ) [VarDecl]
+        ) [VarDecl_list_single]
+      ) [VarDecl_list_more]
+      Statement_list_more(
+        Statement_designatorstatement(
+          DesignatorStatement_expr(
+            Designator_single(
+             bodovi
+            ) [Designator_single]
+            Assignment_Expr(
+              Expr_expr1single(
+                Expr1_single(
+                  Term_single(
+                    Factor_const(
+                      Val_constdecl_number(
+                       0
+                      ) [Val_constdecl_number]
+                    ) [Factor_const]
+                  ) [Term_single]
+                ) [Expr1_single]
+              ) [Expr_expr1single]
+            ) [Assignment_Expr]
+          ) [DesignatorStatement_expr]
+        ) [Statement_designatorstatement]
+        Statement_list_more(
+          Statement_designatorstatement(
+            DesignatorStatement_expr(
+              Designator_single(
+               bodovi
+              ) [Designator_single]
+              Assignment_Expr(
+                Expr_expr1single(
+                  Expr1_single(
+                    Term_single(
+                      Factor_designator(
+                        Designator_single(
+                         sest
+                        ) [Designator_single]
+                      ) [Factor_designator]
+                    ) [Term_single]
+                  ) [Expr1_single]
+                ) [Expr_expr1single]
+              ) [Assignment_Expr]
+            ) [DesignatorStatement_expr]
+          ) [Statement_designatorstatement]
+          Statement_list_single(
+            Statement_if(
+              IfPart(
+                IfOpen(
+                ) [IfOpen]
+                IfClose_normal(
+                  Condition_single(
+                    CondTerm_single(
+                      CondFact_exprexpr(
+                        Expr_expr1single(
+                          Expr1_single(
+                            Term_single(
+                              Factor_designator(
+                                Designator_single(
+                                 bodovi
+                                ) [Designator_single]
+                              ) [Factor_designator]
+                            ) [Term_single]
+                          ) [Expr1_single]
+                        ) [Expr_expr1single]
+                        Relop_higher(
+                        ) [Relop_higher]
+                        Expr_expr1single(
+                          Expr1_single(
+                            Term_single(
+                              Factor_const(
+                                Val_constdecl_number(
+                                 0
+                                ) [Val_constdecl_number]
+                              ) [Factor_const]
+                            ) [Term_single]
+                          ) [Expr1_single]
+                        ) [Expr_expr1single]
+                      ) [CondFact_exprexpr]
+                    ) [CondTerm_single]
+                  ) [Condition_single]
+                ) [IfClose_normal]
+              ) [IfPart]
+              Statement_designatorstatement(
+                DesignatorStatement_plusplus(
+                  Designator_single(
+                   bodovi
+                  ) [Designator_single]
+                ) [DesignatorStatement_plusplus]
+              ) [Statement_designatorstatement]
+              MaybeElse_else(
+                ElseOpen(
+                ) [ElseOpen]
+                Statement_designatorstatement(
+                  DesignatorStatement_plusplus(
+                    Designator_single(
+                     bodovi
+                    ) [Designator_single]
+                  ) [DesignatorStatement_plusplus]
+                ) [Statement_designatorstatement]
+              ) [MaybeElse_else]
+            ) [Statement_if]
+          ) [Statement_list_single]
+        ) [Statement_list_more]
+      ) [Statement_list_more]
+    ) [MethodDecl_varsstats]
+  ) [MethodDecl_list_single]
+) [Program_declsmethods]
+INFO  04:02:09,830 - 
+===================================
+
+INFO  04:02:09,866 - 
+===================================
+

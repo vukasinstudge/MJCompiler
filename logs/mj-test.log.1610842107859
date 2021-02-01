@@ -1,0 +1,26 @@
+INFO  01:08:13,301 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  01:08:13,346 - #2 program
+INFO  01:08:13,347 - #48 test302
+INFO  01:08:13,347 - #10 const
+INFO  01:08:13,347 - #48 int
+INFO  01:08:13,347 - #48 jedan
+INFO  01:08:13,348 - #21 =
+INFO  01:08:13,348 - #47 1
+INFO  01:08:13,348 - #23 ;
+INFO  01:08:13,349 - #48 int
+INFO  01:08:13,349 - #48 i
+INFO  01:08:13,349 - #23 ;
+INFO  01:08:13,349 - #48 bool
+INFO  01:08:13,350 - #48 ibool
+INFO  01:08:13,350 - #23 ;
+INFO  01:08:13,350 - #48 int
+INFO  01:08:13,350 - #48 niz
+INFO  01:08:13,350 - #43 [
+INFO  01:08:13,350 - #44 ]
+INFO  01:08:13,350 - #23 ;
+INFO  01:08:13,350 - #26 {
+INFO  01:08:13,350 - #48 i
+INFO  01:08:13,392 - #40 ++
+ERROR 01:08:13,392 - 
+Sintaksna greska na liniji 13
+ERROR 01:08:13,392 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 13

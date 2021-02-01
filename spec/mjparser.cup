@@ -1,0 +1,403 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+	boolean errorDetected = false;
+	boolean fatalErrorDetected = false;
+
+	Logger log = Logger.getLogger(getClass());
+   	
+   	public void report_info(String message, Object info) {
+        StringBuilder msg = new StringBuilder(message);
+        if (info instanceof Symbol)
+            msg.append(" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        fatalErrorDetected = true;
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol) {
+    		msg.append (" na liniji ").append(((Symbol)info).left);
+    		Symbol s = (Symbol) info;
+    		if (s != null && s.value != null)
+    			msg.append(": " + s.value.toString());
+    	}
+        log.error(msg.toString());
+    }
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, PRINT, RETURN, VOID, BREAK, CLASS, ENUM, ELSE, CONST, IF, SWITCH, DO, WHILE, NEW, READ, EXTENDS, CONTINUE, CASE;
+terminal PLUS, EQUAL, COMMA, SEMI, LPAREN, RPAREN, LBRACE, RBRACE, MINUS, TIMES, SLASH, PERCENT, EQUALEQUAL, NOTEQUAL, HIGHER, HIGHEREQUAL, LOWER, LOWEREQUAL, ANDAND, OROR, PLUSPLUS, MINUSMINUS, DOT, LBRACKET, RBRACKET, QUESTION, COLON;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal String BOOL;
+terminal Character CHAR;
+
+nonterminal Mulop, Addop, Relop, Assignop;
+nonterminal More_designator, DesignatorStatement;
+nonterminal More_term, ActPars, ActPar, ActParsOpen, ActParsPart;
+nonterminal Statement, Case_list, Statement_list, DoOpen, WhileOpen;
+nonterminal FormPars, More_formpars, FormPar, MethodDecl, VarDecl_list;
+nonterminal VarDecl, More_vardecl, Single_vardecl;
+nonterminal OrForVisit, AndForVisit;
+nonterminal IfPart, IfOpen, IfClose, MaybeElse, ElseOpen;
+nonterminal GlobalDecl_list, GlobalDecl, GlobalVarDecl, More_globalvardecl, Single_globalvardecl; 
+nonterminal FieldVarDecl_list, FieldVarDecl, More_fieldvardecl, Single_fieldvardecl;
+nonterminal ClassDecl, MethodDecl_list;
+nonterminal Program, ConstDecl, More_constdecl, Single_constdecl, Decl_list;
+nonterminal TypePart, OpenExpr;
+
+non terminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Val_constdecl, Type, MethodType, MethodUnique, Designator;
+
+non terminal rs.etf.pp1.symboltable.concepts.Struct Assignment, Expr, Expr1, DesignatorActPars, MaybeExpr, Condition, CondTerm, CondFact, Term, Factor, ExprTernary, Expr2, Expr3, FullCond;
+
+precedence left ELSE;
+
+
+Program ::= (Program_empty) PROG ProgName LBRACE RBRACE
+			|
+			(Program_declsempty) PROG ProgName GlobalDecl_list LBRACE RBRACE
+			| 
+			(Program_methods) PROG ProgName LBRACE MethodDecl_list RBRACE
+			|
+			(Program_declsmethods)PROG ProgName GlobalDecl_list LBRACE MethodDecl_list RBRACE;
+			
+GlobalDecl_list ::= (GlobalDecl_list_singleconst) ConstDecl
+					|
+					(GlobalDecl_list_singlevar) GlobalVarDecl
+					|
+					(GlobalDecl_list_singleclass) ClassDecl
+					|
+					(GlobalDecl_list_moreconst) GlobalDecl_list ConstDecl
+					|
+					(GlobalDecl_list_morevar) GlobalDecl_list GlobalVarDecl
+					|
+					(GlobalDecl_list_moreclass) GlobalDecl_list ClassDecl;
+					
+GlobalVarDecl ::= (GlobalVarDecl_normal) TypePart More_globalvardecl SEMI
+				  |
+                  (GlobalVarDecl_error) error:e
+                  {: parser.report_info("Oporavak od greske u definiciji globalne promenljive", null); :};
+
+More_globalvardecl ::= (More_globalvardecl_more) More_globalvardecl COMMA Single_globalvardecl
+				 	   |
+				       (More_globalvardecl_single) Single_globalvardecl;
+
+Single_globalvardecl ::= (Single_globalvardecl) Single_vardecl;
+
+ProgName ::= (ProgName) IDENT;
+
+Decl_list ::= (Decl_list_singleconst) ConstDecl
+			  |
+			  (Decl_list_singlevar) VarDecl
+			  |
+			  (Decl_list_singleclass) ClassDecl
+			  |
+			  (Decl_list_moreconst) Decl_list ConstDecl
+			  |
+			  (Decl_list_morevar) Decl_list VarDecl
+			  |
+			  (Decl_list_moreclass) Decl_list ClassDecl; 
+
+ConstDecl ::= (ConstDecl_singlenumber) CONST TypePart More_constdecl SEMI;
+
+TypePart ::= (TypePart) Type;
+			  
+More_constdecl ::= (More_constdecl_more) More_constdecl COMMA Single_constdecl
+				   |
+				   (More_constdecl_single) Single_constdecl;
+				   
+Single_constdecl ::= (Single_constdecl) IDENT EQUAL Val_constdecl;
+
+Val_constdecl ::= (Val_constdecl_number) NUMBER
+			      |
+			      (Val_constdecl_bool) BOOL
+			      |
+			      (Val_constdecl_char) CHAR; 
+
+VarDecl ::= (VarDecl) TypePart More_vardecl SEMI;
+
+More_vardecl ::= (More_vardecl_more) More_vardecl COMMA Single_vardecl
+				 |
+				 (More_vardecl_single) Single_vardecl;
+
+Single_vardecl ::= (Single_vardecl_single) IDENT
+				   |
+				   (Single_vardecl_brackets) IDENT LBRACKET RBRACKET;
+				 
+ClassDecl ::= (ClassDecl_empty) CLASS IDENT LBRACE RBRACE
+			  |
+			  (ClassDecl_extends) CLASS IDENT EXTENDS Type LBRACE RBRACE
+			  |
+			  (ClassDecl_emptyvars) CLASS IDENT LBRACE FieldVarDecl_list RBRACE
+			  |
+			  (ClassDecl_extendsvars) CLASS IDENT EXTENDS Type LBRACE FieldVarDecl_list RBRACE
+			  |
+			  (ClassDecl_emptybraces) CLASS IDENT LBRACE LBRACE RBRACE RBRACE
+			  |
+			  (ClassDecl_extendsbraces) CLASS IDENT EXTENDS Type LBRACE LBRACE RBRACE RBRACE
+			  |
+			  (ClassDecl_emptyvarsbraces) CLASS IDENT LBRACE FieldVarDecl_list LBRACE RBRACE RBRACE
+			  |
+			  (ClassDecl_extendsvarsbraces) CLASS IDENT EXTENDS Type LBRACE FieldVarDecl_list LBRACE RBRACE RBRACE
+			  |
+			  (ClassDecl_emptymethods) CLASS IDENT LBRACE LBRACE MethodDecl_list RBRACE RBRACE
+			  |
+			  (ClassDecl_extendsmethods) CLASS IDENT EXTENDS Type LBRACE LBRACE MethodDecl_list RBRACE RBRACE
+			  |
+			  (ClassDecl_emptyvarsmethods) CLASS IDENT LBRACE FieldVarDecl_list LBRACE MethodDecl_list RBRACE RBRACE
+			  |
+			  (ClassDecl_extendsvarsmethods) CLASS IDENT EXTENDS Type LBRACE FieldVarDecl_list LBRACE MethodDecl_list RBRACE RBRACE;
+
+FieldVarDecl_list ::= (FieldVarDecl_list_single) FieldVarDecl
+				      |
+				      (FieldVarDecl_list_more) FieldVarDecl FieldVarDecl_list;
+				      
+FieldVarDecl ::= (FieldVarDecl) TypePart More_fieldvardecl SEMI;
+	
+More_fieldvardecl ::= (More_fieldvardecl_more) More_fieldvardecl COMMA Single_fieldvardecl
+				 	  |
+				      (More_fieldvardecl_single) Single_fieldvardecl;
+
+Single_fieldvardecl ::= (Single_fieldvardecl) Single_vardecl;
+
+MethodDecl ::= (MethodDecl_empty) MethodUnique LBRACE RBRACE
+			   |
+			   (MethodDecl_varsempty) MethodUnique VarDecl_list LBRACE RBRACE
+			   |
+			   (MethodDecl_stats) MethodUnique LBRACE Statement_list RBRACE
+			   |
+			   (MethodDecl_varsstats) MethodUnique VarDecl_list LBRACE Statement_list RBRACE;
+
+MethodUnique ::= (MethodUnique_empty) MethodType IDENT LPAREN RPAREN
+				 |
+				 (MethodUnique_pars) MethodType IDENT LPAREN FormPars RPAREN;
+
+MethodType ::= (MethodType_void) VOID
+			   |
+			   (MethodType_type) Type;
+
+MethodDecl_list ::= (MethodDecl_list_single) MethodDecl
+					|
+					(MethodDecl_list_more) MethodDecl MethodDecl_list;
+
+VarDecl_list ::= (VarDecl_list_single) VarDecl
+				 |
+				 (VarDecl_list_more) VarDecl VarDecl_list;
+			 
+FormPars ::= (FormPars) More_formpars;
+
+More_formpars ::= (More_formpars_single) FormPar
+				  |
+				  (More_formpars_more) More_formpars COMMA FormPar;
+			 
+FormPar ::= (FormPar_single) Type IDENT
+		    |
+			(FormPar_singlebrackets) Type IDENT LBRACKET RBRACKET
+			|
+			(FormPar_error) error:e
+			{: parser.report_info("Oporavak od greske u deklarisanju formalnih parametara na liniji " + eleft, null); :};
+
+Type ::= (Type) IDENT;
+
+Statement ::= (Statement_designatorstatement) DesignatorStatement SEMI
+			  |
+			  (Statement_if) IfPart Statement MaybeElse
+			  |
+			  (Statement_dowhile) DoOpen Statement WhileOpen LPAREN Condition RPAREN SEMI
+			  |
+			  (Statement_switchempty) SWITCH LPAREN Expr RPAREN LBRACE RBRACE
+			  |
+			  (Statement_switch) SWITCH LPAREN Expr RPAREN LBRACE Case_list RBRACE
+			  |
+			  (Statement_break) BREAK SEMI
+			  |
+			  (Statement_continue) CONTINUE SEMI
+			  |
+			  (Statement_return) RETURN MaybeExpr SEMI
+			  |
+			  (Statement_read) READ LPAREN Designator RPAREN SEMI
+			  |
+			  (Statement_print) PRINT LPAREN Expr RPAREN SEMI
+			  |
+			  (Statement_printnumconst) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
+			  | 
+			  (Statement_statementlistempty) LBRACE RBRACE
+			  |
+			  (Statement_statementlist) LBRACE Statement_list RBRACE;
+
+DoOpen ::= (DoOpen) DO;
+
+WhileOpen ::= (WhileOpen) WHILE;
+
+MaybeElse ::= (MaybeElse_else) ElseOpen Statement
+  	 		  |
+  	 		  (MaybeElse_empty) /*E*/;
+
+ElseOpen ::= (ElseOpen) ELSE;
+
+IfPart ::= (IfPart) IfOpen IfClose;
+
+IfOpen ::= (IfOpen) IF;
+
+IfClose ::= (IfClose_normal) LPAREN Condition RPAREN
+			|
+			(IfClose_error) LPAREN error:e RPAREN
+			{: parser.report_info("Oporavak od greske u 'if' na liniji " + eleft, null); :};
+			  
+Case_list ::= (Case_list_single) CASE NUMBER COLON 
+			  |
+			  (Case_list_more) CASE NUMBER COLON Case_list
+			  |
+			  (Case_list_singlestatement) CASE NUMBER COLON Statement_list
+			  |
+			  (Case_list_morestatement) CASE NUMBER COLON Statement_list Case_list;
+			  
+Statement_list ::= (Statement_list_single) Statement
+			   	   |
+			       (Statement_list_more) Statement Statement_list;
+
+DesignatorStatement ::= (DesignatorStatement_expr) Designator Assignment
+						|
+						(DesignatorStatement_actpars) DesignatorActPars
+						|
+						(DesignatorStatement_plusplus) Designator PLUSPLUS
+						|
+						(DesignatorStatement_minusminus) Designator MINUSMINUS; 
+
+DesignatorActPars ::= (DesignatorActPars) Designator LPAREN ActParsOpen ActParsPart RPAREN;
+
+ActParsOpen ::= (ActParsOpen) /*E*/;
+
+ActParsPart ::= (ActParsPart_single) ActPars
+				|
+				(ActParsPart_empty) /*E*/;
+
+ActPars ::= (ActPars_exprsingle) ActPar
+		    |
+			(ActPars_exprmore) ActPars COMMA ActPar;
+				 
+ActPar ::= (ActPar) Expr;
+
+Assignment ::= (Assignment_Expr) EQUAL Expr
+			   |
+			   (Assignment_Error) EQUAL error:e
+			   {: parser.report_info("Oporavak od greske pri dodeli na liniji " + eleft, null); :};
+
+Condition ::= (Condition_single) CondTerm
+			  |
+			  (Condition_more) Condition OrForVisit CondTerm;
+
+CondTerm ::= (CondTerm_single) CondFact
+			 |
+			 (CondTerm_more) CondTerm AndForVisit CondFact;
+			 
+OrForVisit ::= (OrForVisit) OROR;
+
+AndForVisit ::= (AndForVisit) ANDAND;
+
+CondFact ::= (CondFact_expr) Expr
+			 |
+			 (CondFact_exprexpr) Expr Relop Expr;
+
+MaybeExpr ::= (MaybeExpr_expr) Expr
+			  |
+			  (MaybeExpr_empty) /*E*/;
+
+Expr ::= (Expr_expr1full) FullCond QUESTION Expr2 COLON Expr3
+		 |
+		 (Expr_expr1single) Expr1;
+
+FullCond ::= (FullCond) Expr1;
+
+Expr2 ::= (Expr2) Expr1;
+
+Expr3 ::= (Expr3) Expr1;
+
+Expr1 ::= (Expr1_more) Expr1 Addop Term
+		  |
+		  (Expr1_minus) MINUS Term
+		  |
+		  (Expr1_single) Term;
+			 
+Term ::= (Term_single) Factor
+		 |
+		 (Term_more) Term Mulop Factor;
+ 			 
+Factor ::= (Factor_designator) Designator
+		   |
+		   (Factor_designatoactpars) DesignatorActPars
+		   |
+		   (Factor_const) Val_constdecl
+		   |
+		   (Factor_newempty) NEW Type
+		   |
+		   (Factor_newexpr) NEW Type LBRACKET Expr RBRACKET
+		   |
+		   (Factor_exprparen) LPAREN Expr RPAREN;
+  
+Designator ::= (Designator_single) IDENT
+			   |
+			   (Designator_expr) Designator LBRACKET OpenExpr Expr RBRACKET
+			   |
+			   (Designator_dotident) Designator DOT IDENT;
+
+OpenExpr ::= (OpenExpr) /*E*/;
+
+Assignop ::= (Assignop) EQUAL;
+
+Relop ::= (Relop_equalequal) EQUALEQUAL 
+		  | 
+		  (Relop_notequal) NOTEQUAL 
+		  | 
+		  (Relop_higher) HIGHER
+		  |
+		  (Relop_higherequal) HIGHEREQUAL
+		  |
+		  (Relop_lower) LOWER
+		  |
+		  (Relop_lowerequal) LOWEREQUAL;
+
+Addop ::= (Addop_plus) PLUS
+		  |
+		  (Addop_minus) MINUS;
+
+Mulop ::= (Mulop_times) TIMES 
+		  | 
+		  (Mulop_slash) SLASH 
+		  | 
+		  (Mulop_percent) PERCENT;
+		
+		
+

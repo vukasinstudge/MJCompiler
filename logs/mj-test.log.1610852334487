@@ -1,0 +1,37 @@
+INFO  03:57:26,688 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  03:57:26,731 - #2 program
+INFO  03:57:26,731 - #48 test301
+INFO  03:57:26,731 - #10 const
+INFO  03:57:26,731 - #48 int
+INFO  03:57:26,731 - #48 nula
+INFO  03:57:26,732 - #21 =
+INFO  03:57:26,732 - #47 0
+INFO  03:57:26,732 - #23 ;
+INFO  03:57:26,733 - #10 const
+INFO  03:57:26,733 - #48 int
+INFO  03:57:26,733 - #48 jedan
+INFO  03:57:26,733 - #21 =
+INFO  03:57:26,733 - #47 1
+INFO  03:57:26,734 - #23 ;
+INFO  03:57:26,734 - #10 const
+INFO  03:57:26,734 - #48 int
+INFO  03:57:26,734 - #48 pet
+INFO  03:57:26,734 - #21 =
+INFO  03:57:26,734 - #47 5
+INFO  03:57:26,734 - #23 ;
+INFO  03:57:26,734 - #48 int
+INFO  03:57:26,736 - #48 niz
+INFO  03:57:26,736 - #43 [
+INFO  03:57:26,736 - #44 ]
+INFO  03:57:26,736 - #23 ;
+INFO  03:57:26,736 - #48 char
+INFO  03:57:26,736 - #48 nizch
+INFO  03:57:26,737 - #43 [
+INFO  03:57:26,737 - #44 ]
+INFO  03:57:26,737 - #23 ;
+INFO  03:57:26,737 - #48 int
+INFO  03:57:26,737 - #48 pez
+INFO  03:57:26,737 - #21 =
+ERROR 03:57:26,737 - 
+Sintaksna greska na liniji 11: =
+ERROR 03:57:26,737 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11: =

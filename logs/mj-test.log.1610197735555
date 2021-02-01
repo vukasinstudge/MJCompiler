@@ -1,0 +1,9 @@
+INFO  14:08:31,989 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\program.mj
+INFO  14:08:32,070 - #2 program
+INFO  14:08:32,070 - #48 p
+INFO  14:08:32,070 - #48 const
+INFO  14:08:32,070 - #48 int
+INFO  14:08:32,071 - #48 size
+ERROR 14:08:32,071 - 
+Sintaksna greska na liniji 2
+ERROR 14:08:32,071 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

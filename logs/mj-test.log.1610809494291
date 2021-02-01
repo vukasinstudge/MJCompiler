@@ -1,0 +1,287 @@
+INFO  16:01:23,733 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  16:01:23,779 - #2 program
+INFO  16:01:23,779 - #48 test301
+INFO  16:01:23,779 - #10 const
+INFO  16:01:23,779 - #48 int
+INFO  16:01:23,780 - #48 nula
+INFO  16:01:23,780 - #21 =
+INFO  16:01:23,780 - #47 0
+INFO  16:01:23,780 - #23 ;
+INFO  16:01:23,781 - #10 const
+INFO  16:01:23,781 - #48 int
+INFO  16:01:23,781 - #48 jedan
+INFO  16:01:23,781 - #21 =
+INFO  16:01:23,781 - #47 1
+INFO  16:01:23,781 - #23 ;
+INFO  16:01:23,782 - #10 const
+INFO  16:01:23,782 - #48 int
+INFO  16:01:23,782 - #48 pet
+INFO  16:01:23,782 - #21 =
+INFO  16:01:23,782 - #47 5
+INFO  16:01:23,782 - #23 ;
+INFO  16:01:23,782 - #48 int
+INFO  16:01:23,783 - #48 niz
+INFO  16:01:23,783 - #43 [
+INFO  16:01:23,783 - #44 ]
+INFO  16:01:23,783 - #23 ;
+INFO  16:01:23,783 - #48 char
+INFO  16:01:23,784 - #48 nizch
+INFO  16:01:23,784 - #43 [
+INFO  16:01:23,784 - #44 ]
+INFO  16:01:23,784 - #23 ;
+INFO  16:01:23,784 - #26 {
+INFO  16:01:23,784 - #5 void
+INFO  16:01:23,784 - #48 main
+INFO  16:01:23,785 - #24 (
+INFO  16:01:23,785 - #25 )
+INFO  16:01:23,785 - #48 int
+INFO  16:01:23,785 - #48 bodovi
+INFO  16:01:23,785 - #23 ;
+INFO  16:01:23,785 - #48 bool
+INFO  16:01:23,785 - #48 bt
+INFO  16:01:23,786 - #23 ;
+INFO  16:01:23,786 - #26 {
+INFO  16:01:23,786 - #48 niz
+INFO  16:01:23,786 - #21 =
+INFO  16:01:23,786 - #15 new
+INFO  16:01:23,786 - #48 int
+INFO  16:01:23,787 - #43 [
+INFO  16:01:23,787 - #47 3
+INFO  16:01:23,787 - #44 ]
+INFO  16:01:23,787 - #23 ;
+INFO  16:01:23,788 - #48 niz
+INFO  16:01:23,788 - #43 [
+INFO  16:01:23,788 - #47 0
+INFO  16:01:23,789 - #44 ]
+INFO  16:01:23,789 - #21 =
+INFO  16:01:23,789 - #47 1
+INFO  16:01:23,789 - #23 ;
+INFO  16:01:23,789 - #48 niz
+INFO  16:01:23,789 - #43 [
+INFO  16:01:23,789 - #47 0
+INFO  16:01:23,789 - #44 ]
+INFO  16:01:23,789 - #40 ++
+INFO  16:01:23,789 - #23 ;
+INFO  16:01:23,790 - #27 }
+INFO  16:01:23,790 - #27 }
+INFO  16:01:23,791 - Program_declsmethods(
+  ProgName(
+   test301
+  ) [ProgName]
+  Decl_list_morevar(
+    Decl_list_morevar(
+      Decl_list_moreconst(
+        Decl_list_moreconst(
+          Decl_list_singleconst(
+            ConstDecl_singlenumber(
+              TypePart(
+                Type(
+                 int
+                ) [Type]
+              ) [TypePart]
+              More_constdecl_single(
+                Single_constdecl(
+                 nula
+                  Val_constdecl_number(
+                   0
+                  ) [Val_constdecl_number]
+                ) [Single_constdecl]
+              ) [More_constdecl_single]
+            ) [ConstDecl_singlenumber]
+          ) [Decl_list_singleconst]
+          ConstDecl_singlenumber(
+            TypePart(
+              Type(
+               int
+              ) [Type]
+            ) [TypePart]
+            More_constdecl_single(
+              Single_constdecl(
+               jedan
+                Val_constdecl_number(
+                 1
+                ) [Val_constdecl_number]
+              ) [Single_constdecl]
+            ) [More_constdecl_single]
+          ) [ConstDecl_singlenumber]
+        ) [Decl_list_moreconst]
+        ConstDecl_singlenumber(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_constdecl_single(
+            Single_constdecl(
+             pet
+              Val_constdecl_number(
+               5
+              ) [Val_constdecl_number]
+            ) [Single_constdecl]
+          ) [More_constdecl_single]
+        ) [ConstDecl_singlenumber]
+      ) [Decl_list_moreconst]
+      VarDecl(
+        TypePart(
+          Type(
+           int
+          ) [Type]
+        ) [TypePart]
+        More_vardecl_single(
+          Single_vardecl_brackets(
+           niz
+          ) [Single_vardecl_brackets]
+        ) [More_vardecl_single]
+      ) [VarDecl]
+    ) [Decl_list_morevar]
+    VarDecl(
+      TypePart(
+        Type(
+         char
+        ) [Type]
+      ) [TypePart]
+      More_vardecl_single(
+        Single_vardecl_brackets(
+         nizch
+        ) [Single_vardecl_brackets]
+      ) [More_vardecl_single]
+    ) [VarDecl]
+  ) [Decl_list_morevar]
+  MethodDecl_list_single(
+    MethodDecl_varsstats(
+      MethodUnique_empty(
+        MethodType_void(
+        ) [MethodType_void]
+       main
+      ) [MethodUnique_empty]
+      VarDecl_list_more(
+        VarDecl(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_vardecl_single(
+            Single_vardecl_single(
+             bodovi
+            ) [Single_vardecl_single]
+          ) [More_vardecl_single]
+        ) [VarDecl]
+        VarDecl_list_single(
+          VarDecl(
+            TypePart(
+              Type(
+               bool
+              ) [Type]
+            ) [TypePart]
+            More_vardecl_single(
+              Single_vardecl_single(
+               bt
+              ) [Single_vardecl_single]
+            ) [More_vardecl_single]
+          ) [VarDecl]
+        ) [VarDecl_list_single]
+      ) [VarDecl_list_more]
+      Statement_list_more(
+        Statement_designatorstatement(
+          DesignatorStatement_expr(
+            Designator_single(
+             niz
+            ) [Designator_single]
+            Assignment(
+              Expr_expr1single(
+                Expr1_single(
+                  Term_single(
+                    Factor_newexpr(
+                      Type(
+                       int
+                      ) [Type]
+                      Expr_expr1single(
+                        Expr1_single(
+                          Term_single(
+                            Factor_const(
+                              Val_constdecl_number(
+                               3
+                              ) [Val_constdecl_number]
+                            ) [Factor_const]
+                          ) [Term_single]
+                        ) [Expr1_single]
+                      ) [Expr_expr1single]
+                    ) [Factor_newexpr]
+                  ) [Term_single]
+                ) [Expr1_single]
+              ) [Expr_expr1single]
+            ) [Assignment]
+          ) [DesignatorStatement_expr]
+        ) [Statement_designatorstatement]
+        Statement_list_more(
+          Statement_designatorstatement(
+            DesignatorStatement_expr(
+              Designator_expr(
+                Designator_single(
+                 niz
+                ) [Designator_single]
+                OpenExpr(
+                ) [OpenExpr]
+                Expr_expr1single(
+                  Expr1_single(
+                    Term_single(
+                      Factor_const(
+                        Val_constdecl_number(
+                         0
+                        ) [Val_constdecl_number]
+                      ) [Factor_const]
+                    ) [Term_single]
+                  ) [Expr1_single]
+                ) [Expr_expr1single]
+              ) [Designator_expr]
+              Assignment(
+                Expr_expr1single(
+                  Expr1_single(
+                    Term_single(
+                      Factor_const(
+                        Val_constdecl_number(
+                         1
+                        ) [Val_constdecl_number]
+                      ) [Factor_const]
+                    ) [Term_single]
+                  ) [Expr1_single]
+                ) [Expr_expr1single]
+              ) [Assignment]
+            ) [DesignatorStatement_expr]
+          ) [Statement_designatorstatement]
+          Statement_list_single(
+            Statement_designatorstatement(
+              DesignatorStatement_plusplus(
+                Designator_expr(
+                  Designator_single(
+                   niz
+                  ) [Designator_single]
+                  OpenExpr(
+                  ) [OpenExpr]
+                  Expr_expr1single(
+                    Expr1_single(
+                      Term_single(
+                        Factor_const(
+                          Val_constdecl_number(
+                           0
+                          ) [Val_constdecl_number]
+                        ) [Factor_const]
+                      ) [Term_single]
+                    ) [Expr1_single]
+                  ) [Expr_expr1single]
+                ) [Designator_expr]
+              ) [DesignatorStatement_plusplus]
+            ) [Statement_designatorstatement]
+          ) [Statement_list_single]
+        ) [Statement_list_more]
+      ) [Statement_list_more]
+    ) [MethodDecl_varsstats]
+  ) [MethodDecl_list_single]
+) [Program_declsmethods]
+INFO  16:01:23,791 - 
+===================================
+
+INFO  16:01:23,797 - 
+===================================
+

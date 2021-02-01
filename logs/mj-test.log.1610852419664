@@ -1,0 +1,37 @@
+INFO  03:59:48,717 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  03:59:48,760 - #2 program
+INFO  03:59:48,760 - #48 test301
+INFO  03:59:48,760 - #10 const
+INFO  03:59:48,761 - #48 int
+INFO  03:59:48,761 - #48 nula
+INFO  03:59:48,762 - #21 =
+INFO  03:59:48,762 - #47 0
+INFO  03:59:48,762 - #23 ;
+INFO  03:59:48,763 - #10 const
+INFO  03:59:48,763 - #48 int
+INFO  03:59:48,763 - #48 jedan
+INFO  03:59:48,763 - #21 =
+INFO  03:59:48,763 - #47 1
+INFO  03:59:48,763 - #23 ;
+INFO  03:59:48,763 - #10 const
+INFO  03:59:48,763 - #48 int
+INFO  03:59:48,763 - #48 pet
+INFO  03:59:48,763 - #21 =
+INFO  03:59:48,764 - #47 5
+INFO  03:59:48,764 - #23 ;
+INFO  03:59:48,764 - #48 int
+INFO  03:59:48,812 - #48 niz
+INFO  03:59:48,812 - #43 [
+INFO  03:59:48,812 - #44 ]
+INFO  03:59:48,814 - #23 ;
+INFO  03:59:48,814 - #48 char
+INFO  03:59:48,815 - #48 nizch
+INFO  03:59:48,815 - #43 [
+INFO  03:59:48,816 - #44 ]
+INFO  03:59:48,816 - #23 ;
+INFO  03:59:48,816 - #48 int
+INFO  03:59:48,816 - #48 niz
+INFO  03:59:48,816 - #48 pez
+ERROR 03:59:48,817 - 
+Sintaksna greska na liniji 12: pez
+ERROR 03:59:48,817 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12: pez

@@ -1,0 +1,118 @@
+INFO  14:58:32,283 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\program.mj
+INFO  14:58:32,598 - #2 program
+INFO  14:58:32,599 - #48 MJProgram
+INFO  14:58:32,599 - #48 int
+INFO  14:58:32,600 - #48 x
+INFO  14:58:32,600 - #23 ;
+INFO  14:58:32,600 - #48 int
+INFO  14:58:32,601 - #48 y
+INFO  14:58:32,601 - #23 ;
+INFO  14:58:32,601 - #26 {
+INFO  14:58:32,601 - #48 int
+INFO  14:58:32,601 - #48 main
+INFO  14:58:32,601 - #24 (
+INFO  14:58:32,602 - #25 )
+INFO  14:58:32,602 - #26 {
+INFO  14:58:32,602 - #3 print
+INFO  14:58:32,602 - #24 (
+INFO  14:58:32,602 - #47 1
+INFO  14:58:32,602 - #25 )
+INFO  14:58:32,604 - #23 ;
+INFO  14:58:32,604 - #48 x
+INFO  14:58:32,605 - #21 =
+INFO  14:58:32,605 - #48 y
+INFO  14:58:32,607 - #20 +
+INFO  14:58:32,607 - #47 5
+INFO  14:58:32,608 - #23 ;
+INFO  14:58:32,609 - #3 print
+INFO  14:58:32,610 - #24 (
+INFO  14:58:32,610 - #47 2
+INFO  14:58:32,610 - #25 )
+INFO  14:58:32,610 - #23 ;
+INFO  14:58:32,611 - #27 }
+INFO  14:58:32,611 - #27 }
+INFO  14:58:32,627 - Program_declsmethods(
+ MJProgram
+  Decl_list_morevar(
+    Decl_list_singlevar(
+      VarDecl_empty(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+       x
+      ) [VarDecl_empty]
+    ) [Decl_list_singlevar]
+    VarDecl_empty(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     y
+    ) [VarDecl_empty]
+  ) [Decl_list_morevar]
+  MethodDecl_list_single(
+    MethodDecl_typestats(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     main
+      Statement_list_more(
+        Statement_print(
+          Expr_expr1single(
+            Expr1_expr1single(
+              Term_single(
+                Factor_numconst(
+                 1
+                ) [Factor_numconst]
+              ) [Term_single]
+            ) [Expr1_expr1single]
+          ) [Expr_expr1single]
+        ) [Statement_print]
+        Statement_list_more(
+          Statement_designatorstatement(
+            DesignatorStatement_expr(
+              Designator_identsingle(
+               x
+              ) [Designator_identsingle]
+              Assignop(
+              ) [Assignop]
+              Expr_expr1single(
+                Expr1_expr1more(
+                  Term_single(
+                    Factor_designatorsingle(
+                      Designator_identsingle(
+                       y
+                      ) [Designator_identsingle]
+                    ) [Factor_designatorsingle]
+                  ) [Term_single]
+                  More_expr1_single(
+                    Addop_plus(
+                    ) [Addop_plus]
+                    Term_single(
+                      Factor_numconst(
+                       5
+                      ) [Factor_numconst]
+                    ) [Term_single]
+                  ) [More_expr1_single]
+                ) [Expr1_expr1more]
+              ) [Expr_expr1single]
+            ) [DesignatorStatement_expr]
+          ) [Statement_designatorstatement]
+          Statement_list_single(
+            Statement_print(
+              Expr_expr1single(
+                Expr1_expr1single(
+                  Term_single(
+                    Factor_numconst(
+                     2
+                    ) [Factor_numconst]
+                  ) [Term_single]
+                ) [Expr1_expr1single]
+              ) [Expr_expr1single]
+            ) [Statement_print]
+          ) [Statement_list_single]
+        ) [Statement_list_more]
+      ) [Statement_list_more]
+    ) [MethodDecl_typestats]
+  ) [MethodDecl_list_single]
+) [Program_declsmethods]
+INFO  14:58:32,629 - ===================================

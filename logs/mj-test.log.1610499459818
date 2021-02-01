@@ -1,0 +1,1327 @@
+INFO  01:33:45,927 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\program.mj
+INFO  01:33:45,983 - #2 program
+INFO  01:33:45,984 - #48 p
+INFO  01:33:45,984 - #10 const
+INFO  01:33:45,984 - #48 int
+INFO  01:33:45,984 - #48 size
+INFO  01:33:45,985 - #21 =
+INFO  01:33:45,985 - #47 10
+INFO  01:33:45,985 - #23 ;
+INFO  01:33:45,985 - #7 class
+INFO  01:33:45,986 - #48 Table
+INFO  01:33:45,986 - #26 {
+INFO  01:33:45,986 - #48 int
+INFO  01:33:45,986 - #48 pos
+INFO  01:33:45,986 - #43 [
+INFO  01:33:45,986 - #44 ]
+INFO  01:33:45,986 - #22 ,
+INFO  01:33:45,987 - #48 neg
+INFO  01:33:45,987 - #43 [
+INFO  01:33:45,987 - #44 ]
+INFO  01:33:45,988 - #23 ;
+INFO  01:33:45,988 - #26 {
+INFO  01:33:45,988 - #5 void
+INFO  01:33:45,989 - #48 putp
+INFO  01:33:45,989 - #24 (
+INFO  01:33:45,989 - #48 int
+INFO  01:33:45,989 - #48 a
+INFO  01:33:45,989 - #22 ,
+INFO  01:33:45,989 - #48 int
+INFO  01:33:45,989 - #48 idx
+INFO  01:33:45,989 - #25 )
+INFO  01:33:45,990 - #26 {
+INFO  01:33:45,990 - #48 this
+INFO  01:33:45,990 - #42 .
+INFO  01:33:45,990 - #48 pos
+INFO  01:33:45,990 - #43 [
+INFO  01:33:45,990 - #48 idx
+INFO  01:33:45,990 - #44 ]
+INFO  01:33:45,991 - #21 =
+INFO  01:33:45,991 - #48 a
+INFO  01:33:45,991 - #23 ;
+INFO  01:33:45,991 - #27 }
+INFO  01:33:45,991 - #5 void
+INFO  01:33:45,992 - #48 putn
+INFO  01:33:45,992 - #24 (
+INFO  01:33:45,992 - #48 int
+INFO  01:33:45,992 - #48 a
+INFO  01:33:45,992 - #22 ,
+INFO  01:33:45,992 - #48 int
+INFO  01:33:45,992 - #48 idx
+INFO  01:33:45,992 - #25 )
+INFO  01:33:45,992 - #26 {
+INFO  01:33:45,992 - #48 this
+INFO  01:33:45,992 - #42 .
+INFO  01:33:45,992 - #48 neg
+INFO  01:33:45,992 - #43 [
+INFO  01:33:45,992 - #48 idx
+INFO  01:33:45,992 - #44 ]
+INFO  01:33:45,992 - #21 =
+INFO  01:33:45,992 - #48 a
+INFO  01:33:45,993 - #23 ;
+INFO  01:33:45,993 - #27 }
+INFO  01:33:45,993 - #48 int
+INFO  01:33:45,993 - #48 getp
+INFO  01:33:45,993 - #24 (
+INFO  01:33:45,993 - #48 int
+INFO  01:33:45,993 - #48 idx
+INFO  01:33:45,993 - #25 )
+INFO  01:33:45,993 - #26 {
+INFO  01:33:45,993 - #4 return
+INFO  01:33:45,993 - #48 pos
+INFO  01:33:45,993 - #43 [
+INFO  01:33:45,993 - #48 idx
+INFO  01:33:45,993 - #44 ]
+INFO  01:33:45,993 - #23 ;
+INFO  01:33:45,993 - #27 }
+INFO  01:33:45,993 - #48 int
+INFO  01:33:45,994 - #48 getn
+INFO  01:33:45,994 - #24 (
+INFO  01:33:45,994 - #48 int
+INFO  01:33:45,994 - #48 idx
+INFO  01:33:45,994 - #25 )
+INFO  01:33:45,994 - #26 {
+INFO  01:33:45,994 - #4 return
+INFO  01:33:45,994 - #48 neg
+INFO  01:33:45,994 - #43 [
+INFO  01:33:45,994 - #48 idx
+INFO  01:33:45,994 - #44 ]
+INFO  01:33:45,994 - #23 ;
+INFO  01:33:45,994 - #27 }
+INFO  01:33:45,994 - #27 }
+INFO  01:33:45,994 - #27 }
+INFO  01:33:45,994 - #48 Table
+INFO  01:33:45,995 - #48 val
+INFO  01:33:45,995 - #23 ;
+INFO  01:33:45,995 - #26 {
+INFO  01:33:45,995 - #5 void
+INFO  01:33:45,995 - #48 f
+INFO  01:33:45,996 - #24 (
+INFO  01:33:45,996 - #48 char
+INFO  01:33:45,996 - #48 ch
+INFO  01:33:45,997 - #22 ,
+INFO  01:33:45,997 - #48 int
+INFO  01:33:45,997 - #48 a
+INFO  01:33:45,997 - #22 ,
+INFO  01:33:45,997 - #48 int
+INFO  01:33:45,997 - #48 arg
+INFO  01:33:45,997 - #25 )
+INFO  01:33:45,997 - #48 int
+INFO  01:33:45,997 - #48 x
+INFO  01:33:45,997 - #23 ;
+INFO  01:33:45,997 - #26 {
+INFO  01:33:45,997 - #48 x
+INFO  01:33:45,997 - #21 =
+INFO  01:33:45,998 - #48 arg
+INFO  01:33:45,998 - #23 ;
+INFO  01:33:45,998 - #27 }
+INFO  01:33:45,998 - #5 void
+INFO  01:33:45,998 - #48 main
+INFO  01:33:45,998 - #24 (
+INFO  01:33:45,998 - #25 )
+INFO  01:33:45,998 - #48 int
+INFO  01:33:45,998 - #48 x
+INFO  01:33:45,998 - #22 ,
+INFO  01:33:45,998 - #48 i
+INFO  01:33:45,998 - #23 ;
+INFO  01:33:45,998 - #48 char
+INFO  01:33:45,998 - #48 c
+INFO  01:33:45,998 - #23 ;
+INFO  01:33:45,998 - #26 {
+INFO  01:33:45,998 - #48 val
+INFO  01:33:45,999 - #21 =
+INFO  01:33:45,999 - #15 new
+INFO  01:33:45,999 - #48 Table
+INFO  01:33:45,999 - #23 ;
+INFO  01:33:45,999 - #48 val
+INFO  01:33:45,999 - #42 .
+INFO  01:33:45,999 - #48 pos
+INFO  01:33:45,999 - #21 =
+INFO  01:33:45,999 - #15 new
+INFO  01:33:45,999 - #48 int
+INFO  01:33:45,999 - #43 [
+INFO  01:33:45,999 - #48 size
+INFO  01:33:45,999 - #44 ]
+INFO  01:33:45,999 - #23 ;
+INFO  01:33:45,999 - #48 val
+INFO  01:33:45,999 - #42 .
+INFO  01:33:45,999 - #48 neg
+INFO  01:33:45,999 - #21 =
+INFO  01:33:45,999 - #15 new
+INFO  01:33:45,999 - #48 int
+INFO  01:33:46,000 - #43 [
+INFO  01:33:46,000 - #48 size
+INFO  01:33:46,000 - #44 ]
+INFO  01:33:46,000 - #23 ;
+INFO  01:33:46,000 - #48 i
+INFO  01:33:46,000 - #21 =
+INFO  01:33:46,000 - #47 0
+INFO  01:33:46,000 - #23 ;
+INFO  01:33:46,000 - #13 do
+INFO  01:33:46,000 - #26 {
+INFO  01:33:46,000 - #48 val
+INFO  01:33:46,000 - #42 .
+INFO  01:33:46,000 - #48 putp
+INFO  01:33:46,000 - #24 (
+INFO  01:33:46,000 - #47 0
+INFO  01:33:46,001 - #22 ,
+INFO  01:33:46,001 - #48 i
+INFO  01:33:46,001 - #25 )
+INFO  01:33:46,001 - #23 ;
+INFO  01:33:46,001 - #48 val
+INFO  01:33:46,001 - #42 .
+INFO  01:33:46,001 - #48 putn
+INFO  01:33:46,001 - #24 (
+INFO  01:33:46,001 - #47 0
+INFO  01:33:46,001 - #22 ,
+INFO  01:33:46,002 - #48 i
+INFO  01:33:46,002 - #25 )
+INFO  01:33:46,002 - #23 ;
+INFO  01:33:46,002 - #48 i
+INFO  01:33:46,002 - #40 ++
+INFO  01:33:46,002 - #23 ;
+INFO  01:33:46,002 - #27 }
+INFO  01:33:46,002 - #14 while
+INFO  01:33:46,002 - #24 (
+INFO  01:33:46,002 - #48 i
+INFO  01:33:46,002 - #36 <
+INFO  01:33:46,002 - #48 size
+INFO  01:33:46,003 - #25 )
+INFO  01:33:46,003 - #23 ;
+INFO  01:33:46,003 - #48 f
+INFO  01:33:46,003 - #24 (
+INFO  01:33:46,003 - #48 c
+INFO  01:33:46,003 - #22 ,
+INFO  01:33:46,003 - #48 x
+INFO  01:33:46,003 - #22 ,
+INFO  01:33:46,003 - #48 i
+INFO  01:33:46,003 - #25 )
+INFO  01:33:46,004 - #23 ;
+INFO  01:33:46,004 - #16 read
+INFO  01:33:46,004 - #24 (
+INFO  01:33:46,004 - #48 x
+INFO  01:33:46,004 - #25 )
+INFO  01:33:46,004 - #23 ;
+INFO  01:33:46,004 - #13 do
+INFO  01:33:46,004 - #26 {
+INFO  01:33:46,004 - #11 if
+INFO  01:33:46,004 - #24 (
+INFO  01:33:46,004 - #48 x
+INFO  01:33:46,004 - #37 <=
+INFO  01:33:46,004 - #47 0
+INFO  01:33:46,005 - #25 )
+INFO  01:33:46,005 - #6 break
+INFO  01:33:46,005 - #23 ;
+INFO  01:33:46,005 - #11 if
+INFO  01:33:46,005 - #24 (
+INFO  01:33:46,005 - #47 0
+INFO  01:33:46,005 - #37 <=
+INFO  01:33:46,005 - #48 x
+INFO  01:33:46,005 - #38 &&
+INFO  01:33:46,005 - #48 x
+INFO  01:33:46,005 - #36 <
+INFO  01:33:46,005 - #48 size
+INFO  01:33:46,005 - #25 )
+INFO  01:33:46,005 - #26 {
+INFO  01:33:46,006 - #48 val
+INFO  01:33:46,006 - #42 .
+INFO  01:33:46,006 - #48 putp
+INFO  01:33:46,006 - #24 (
+INFO  01:33:46,006 - #48 val
+INFO  01:33:46,006 - #42 .
+INFO  01:33:46,006 - #48 getp
+INFO  01:33:46,006 - #24 (
+INFO  01:33:46,006 - #48 x
+INFO  01:33:46,006 - #25 )
+INFO  01:33:46,006 - #20 +
+INFO  01:33:46,006 - #47 1
+INFO  01:33:46,007 - #25 )
+INFO  01:33:46,007 - #23 ;
+INFO  01:33:46,007 - #27 }
+INFO  01:33:46,007 - #9 else
+INFO  01:33:46,007 - #11 if
+INFO  01:33:46,007 - #24 (
+INFO  01:33:46,007 - #28 â€?
+INFO  01:33:46,007 - #48 size
+INFO  01:33:46,007 - #36 <
+INFO  01:33:46,007 - #48 x
+INFO  01:33:46,008 - #38 &&
+INFO  01:33:46,008 - #48 x
+INFO  01:33:46,008 - #36 <
+INFO  01:33:46,008 - #47 0
+INFO  01:33:46,008 - #25 )
+INFO  01:33:46,008 - #26 {
+INFO  01:33:46,008 - #48 val
+INFO  01:33:46,008 - #42 .
+INFO  01:33:46,008 - #48 putn
+INFO  01:33:46,008 - #24 (
+INFO  01:33:46,008 - #48 val
+INFO  01:33:46,008 - #42 .
+INFO  01:33:46,008 - #48 getn
+INFO  01:33:46,008 - #24 (
+INFO  01:33:46,008 - #28 â€?
+INFO  01:33:46,008 - #48 x
+INFO  01:33:46,008 - #25 )
+INFO  01:33:46,009 - #20 +
+INFO  01:33:46,009 - #47 1
+INFO  01:33:46,009 - #25 )
+INFO  01:33:46,009 - #23 ;
+INFO  01:33:46,009 - #27 }
+INFO  01:33:46,009 - #16 read
+INFO  01:33:46,009 - #24 (
+INFO  01:33:46,009 - #48 x
+INFO  01:33:46,009 - #25 )
+INFO  01:33:46,011 - #23 ;
+INFO  01:33:46,012 - #27 }
+INFO  01:33:46,012 - #14 while
+INFO  01:33:46,012 - #24 (
+INFO  01:33:46,012 - #49 true
+INFO  01:33:46,012 - #25 )
+INFO  01:33:46,012 - #23 ;
+INFO  01:33:46,012 - #3 print
+INFO  01:33:46,012 - #24 (
+INFO  01:33:46,012 - #48 x
+INFO  01:33:46,012 - #29 *
+INFO  01:33:46,012 - #47 0
+INFO  01:33:46,013 - #45 ?
+INFO  01:33:46,013 - #50 -
+INFO  01:33:46,013 - #46 :
+INFO  01:33:46,013 - #50 +
+INFO  01:33:46,013 - #25 )
+INFO  01:33:46,014 - #23 ;
+INFO  01:33:46,014 - #27 }
+INFO  01:33:46,014 - #27 }
+INFO  01:33:46,017 - Program_declsmethods(
+  ProgName(
+   p
+  ) [ProgName]
+  Decl_list_morevar(
+    Decl_list_moreclass(
+      Decl_list_singleconst(
+        ConstDecl_singlenumber(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_constdecl_single(
+            Single_constdecl(
+             size
+              Val_constdecl_number(
+               10
+              ) [Val_constdecl_number]
+            ) [Single_constdecl]
+          ) [More_constdecl_single]
+        ) [ConstDecl_singlenumber]
+      ) [Decl_list_singleconst]
+      ClassDecl_emptyvarsmethods(
+       Table
+        FieldVarDecl_list_single(
+          FieldVarDecl(
+            TypePart(
+              Type(
+               int
+              ) [Type]
+            ) [TypePart]
+            More_fieldvardecl_more(
+              More_fieldvardecl_single(
+                Single_fieldvardecl(
+                  Single_vardecl_brackets(
+                   pos
+                  ) [Single_vardecl_brackets]
+                ) [Single_fieldvardecl]
+              ) [More_fieldvardecl_single]
+              Single_fieldvardecl(
+                Single_vardecl_brackets(
+                 neg
+                ) [Single_vardecl_brackets]
+              ) [Single_fieldvardecl]
+            ) [More_fieldvardecl_more]
+          ) [FieldVarDecl]
+        ) [FieldVarDecl_list_single]
+        MethodDecl_list_more(
+          MethodDecl_stats(
+            MethodUnique_pars(
+              MethodType_void(
+              ) [MethodType_void]
+             putp
+              FormPars(
+                More_formpars_more(
+                  More_formpars_single(
+                    FormPar_single(
+                      Type(
+                       int
+                      ) [Type]
+                     a
+                    ) [FormPar_single]
+                  ) [More_formpars_single]
+                  FormPar_single(
+                    Type(
+                     int
+                    ) [Type]
+                   idx
+                  ) [FormPar_single]
+                ) [More_formpars_more]
+              ) [FormPars]
+            ) [MethodUnique_pars]
+            Statement_list_single(
+              Statement_designatorstatement(
+                DesignatorStatement_expr(
+                  Designator_identmore(
+                   this
+                    More_designator_moreident(
+                     pos
+                      More_designator_expr(
+                        Expr_expr1single(
+                          Expr1_expr1single(
+                            Term_single(
+                              Factor_designatorsingle(
+                                Designator_identsingle(
+                                 idx
+                                ) [Designator_identsingle]
+                              ) [Factor_designatorsingle]
+                            ) [Term_single]
+                          ) [Expr1_expr1single]
+                        ) [Expr_expr1single]
+                      ) [More_designator_expr]
+                    ) [More_designator_moreident]
+                  ) [Designator_identmore]
+                  Assignment(
+                    Expr_expr1single(
+                      Expr1_expr1single(
+                        Term_single(
+                          Factor_designatorsingle(
+                            Designator_identsingle(
+                             a
+                            ) [Designator_identsingle]
+                          ) [Factor_designatorsingle]
+                        ) [Term_single]
+                      ) [Expr1_expr1single]
+                    ) [Expr_expr1single]
+                  ) [Assignment]
+                ) [DesignatorStatement_expr]
+              ) [Statement_designatorstatement]
+            ) [Statement_list_single]
+          ) [MethodDecl_stats]
+          MethodDecl_list_more(
+            MethodDecl_stats(
+              MethodUnique_pars(
+                MethodType_void(
+                ) [MethodType_void]
+               putn
+                FormPars(
+                  More_formpars_more(
+                    More_formpars_single(
+                      FormPar_single(
+                        Type(
+                         int
+                        ) [Type]
+                       a
+                      ) [FormPar_single]
+                    ) [More_formpars_single]
+                    FormPar_single(
+                      Type(
+                       int
+                      ) [Type]
+                     idx
+                    ) [FormPar_single]
+                  ) [More_formpars_more]
+                ) [FormPars]
+              ) [MethodUnique_pars]
+              Statement_list_single(
+                Statement_designatorstatement(
+                  DesignatorStatement_expr(
+                    Designator_identmore(
+                     this
+                      More_designator_moreident(
+                       neg
+                        More_designator_expr(
+                          Expr_expr1single(
+                            Expr1_expr1single(
+                              Term_single(
+                                Factor_designatorsingle(
+                                  Designator_identsingle(
+                                   idx
+                                  ) [Designator_identsingle]
+                                ) [Factor_designatorsingle]
+                              ) [Term_single]
+                            ) [Expr1_expr1single]
+                          ) [Expr_expr1single]
+                        ) [More_designator_expr]
+                      ) [More_designator_moreident]
+                    ) [Designator_identmore]
+                    Assignment(
+                      Expr_expr1single(
+                        Expr1_expr1single(
+                          Term_single(
+                            Factor_designatorsingle(
+                              Designator_identsingle(
+                               a
+                              ) [Designator_identsingle]
+                            ) [Factor_designatorsingle]
+                          ) [Term_single]
+                        ) [Expr1_expr1single]
+                      ) [Expr_expr1single]
+                    ) [Assignment]
+                  ) [DesignatorStatement_expr]
+                ) [Statement_designatorstatement]
+              ) [Statement_list_single]
+            ) [MethodDecl_stats]
+            MethodDecl_list_more(
+              MethodDecl_stats(
+                MethodUnique_pars(
+                  MethodType_type(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [MethodType_type]
+                 getp
+                  FormPars(
+                    More_formpars_single(
+                      FormPar_single(
+                        Type(
+                         int
+                        ) [Type]
+                       idx
+                      ) [FormPar_single]
+                    ) [More_formpars_single]
+                  ) [FormPars]
+                ) [MethodUnique_pars]
+                Statement_list_single(
+                  Statement_return_expr(
+                    Expr_expr1single(
+                      Expr1_expr1single(
+                        Term_single(
+                          Factor_designatorsingle(
+                            Designator_identmore(
+                             pos
+                              More_designator_expr(
+                                Expr_expr1single(
+                                  Expr1_expr1single(
+                                    Term_single(
+                                      Factor_designatorsingle(
+                                        Designator_identsingle(
+                                         idx
+                                        ) [Designator_identsingle]
+                                      ) [Factor_designatorsingle]
+                                    ) [Term_single]
+                                  ) [Expr1_expr1single]
+                                ) [Expr_expr1single]
+                              ) [More_designator_expr]
+                            ) [Designator_identmore]
+                          ) [Factor_designatorsingle]
+                        ) [Term_single]
+                      ) [Expr1_expr1single]
+                    ) [Expr_expr1single]
+                  ) [Statement_return_expr]
+                ) [Statement_list_single]
+              ) [MethodDecl_stats]
+              MethodDecl_list_single(
+                MethodDecl_stats(
+                  MethodUnique_pars(
+                    MethodType_type(
+                      Type(
+                       int
+                      ) [Type]
+                    ) [MethodType_type]
+                   getn
+                    FormPars(
+                      More_formpars_single(
+                        FormPar_single(
+                          Type(
+                           int
+                          ) [Type]
+                         idx
+                        ) [FormPar_single]
+                      ) [More_formpars_single]
+                    ) [FormPars]
+                  ) [MethodUnique_pars]
+                  Statement_list_single(
+                    Statement_return_expr(
+                      Expr_expr1single(
+                        Expr1_expr1single(
+                          Term_single(
+                            Factor_designatorsingle(
+                              Designator_identmore(
+                               neg
+                                More_designator_expr(
+                                  Expr_expr1single(
+                                    Expr1_expr1single(
+                                      Term_single(
+                                        Factor_designatorsingle(
+                                          Designator_identsingle(
+                                           idx
+                                          ) [Designator_identsingle]
+                                        ) [Factor_designatorsingle]
+                                      ) [Term_single]
+                                    ) [Expr1_expr1single]
+                                  ) [Expr_expr1single]
+                                ) [More_designator_expr]
+                              ) [Designator_identmore]
+                            ) [Factor_designatorsingle]
+                          ) [Term_single]
+                        ) [Expr1_expr1single]
+                      ) [Expr_expr1single]
+                    ) [Statement_return_expr]
+                  ) [Statement_list_single]
+                ) [MethodDecl_stats]
+              ) [MethodDecl_list_single]
+            ) [MethodDecl_list_more]
+          ) [MethodDecl_list_more]
+        ) [MethodDecl_list_more]
+      ) [ClassDecl_emptyvarsmethods]
+    ) [Decl_list_moreclass]
+    VarDecl(
+      TypePart(
+        Type(
+         Table
+        ) [Type]
+      ) [TypePart]
+      More_vardecl_single(
+        Single_vardecl_single(
+         val
+        ) [Single_vardecl_single]
+      ) [More_vardecl_single]
+    ) [VarDecl]
+  ) [Decl_list_morevar]
+  MethodDecl_list_more(
+    MethodDecl_varsstats(
+      MethodUnique_pars(
+        MethodType_void(
+        ) [MethodType_void]
+       f
+        FormPars(
+          More_formpars_more(
+            More_formpars_more(
+              More_formpars_single(
+                FormPar_single(
+                  Type(
+                   char
+                  ) [Type]
+                 ch
+                ) [FormPar_single]
+              ) [More_formpars_single]
+              FormPar_single(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormPar_single]
+            ) [More_formpars_more]
+            FormPar_single(
+              Type(
+               int
+              ) [Type]
+             arg
+            ) [FormPar_single]
+          ) [More_formpars_more]
+        ) [FormPars]
+      ) [MethodUnique_pars]
+      VarDecl_list_single(
+        VarDecl(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_vardecl_single(
+            Single_vardecl_single(
+             x
+            ) [Single_vardecl_single]
+          ) [More_vardecl_single]
+        ) [VarDecl]
+      ) [VarDecl_list_single]
+      Statement_list_single(
+        Statement_designatorstatement(
+          DesignatorStatement_expr(
+            Designator_identsingle(
+             x
+            ) [Designator_identsingle]
+            Assignment(
+              Expr_expr1single(
+                Expr1_expr1single(
+                  Term_single(
+                    Factor_designatorsingle(
+                      Designator_identsingle(
+                       arg
+                      ) [Designator_identsingle]
+                    ) [Factor_designatorsingle]
+                  ) [Term_single]
+                ) [Expr1_expr1single]
+              ) [Expr_expr1single]
+            ) [Assignment]
+          ) [DesignatorStatement_expr]
+        ) [Statement_designatorstatement]
+      ) [Statement_list_single]
+    ) [MethodDecl_varsstats]
+    MethodDecl_list_single(
+      MethodDecl_varsstats(
+        MethodUnique_empty(
+          MethodType_void(
+          ) [MethodType_void]
+         main
+        ) [MethodUnique_empty]
+        VarDecl_list_more(
+          VarDecl(
+            TypePart(
+              Type(
+               int
+              ) [Type]
+            ) [TypePart]
+            More_vardecl_more(
+              More_vardecl_single(
+                Single_vardecl_single(
+                 x
+                ) [Single_vardecl_single]
+              ) [More_vardecl_single]
+              Single_vardecl_single(
+               i
+              ) [Single_vardecl_single]
+            ) [More_vardecl_more]
+          ) [VarDecl]
+          VarDecl_list_single(
+            VarDecl(
+              TypePart(
+                Type(
+                 char
+                ) [Type]
+              ) [TypePart]
+              More_vardecl_single(
+                Single_vardecl_single(
+                 c
+                ) [Single_vardecl_single]
+              ) [More_vardecl_single]
+            ) [VarDecl]
+          ) [VarDecl_list_single]
+        ) [VarDecl_list_more]
+        Statement_list_more(
+          Statement_designatorstatement(
+            DesignatorStatement_expr(
+              Designator_identsingle(
+               val
+              ) [Designator_identsingle]
+              Assignment(
+                Expr_expr1single(
+                  Expr1_expr1single(
+                    Term_single(
+                      Factor_newempty(
+                        Type(
+                         Table
+                        ) [Type]
+                      ) [Factor_newempty]
+                    ) [Term_single]
+                  ) [Expr1_expr1single]
+                ) [Expr_expr1single]
+              ) [Assignment]
+            ) [DesignatorStatement_expr]
+          ) [Statement_designatorstatement]
+          Statement_list_more(
+            Statement_designatorstatement(
+              DesignatorStatement_expr(
+                Designator_identmore(
+                 val
+                  More_designator_ident(
+                   pos
+                  ) [More_designator_ident]
+                ) [Designator_identmore]
+                Assignment(
+                  Expr_expr1single(
+                    Expr1_expr1single(
+                      Term_single(
+                        Factor_newexpr(
+                          Type(
+                           int
+                          ) [Type]
+                          Expr_expr1single(
+                            Expr1_expr1single(
+                              Term_single(
+                                Factor_designatorsingle(
+                                  Designator_identsingle(
+                                   size
+                                  ) [Designator_identsingle]
+                                ) [Factor_designatorsingle]
+                              ) [Term_single]
+                            ) [Expr1_expr1single]
+                          ) [Expr_expr1single]
+                        ) [Factor_newexpr]
+                      ) [Term_single]
+                    ) [Expr1_expr1single]
+                  ) [Expr_expr1single]
+                ) [Assignment]
+              ) [DesignatorStatement_expr]
+            ) [Statement_designatorstatement]
+            Statement_list_more(
+              Statement_designatorstatement(
+                DesignatorStatement_expr(
+                  Designator_identmore(
+                   val
+                    More_designator_ident(
+                     neg
+                    ) [More_designator_ident]
+                  ) [Designator_identmore]
+                  Assignment(
+                    Expr_expr1single(
+                      Expr1_expr1single(
+                        Term_single(
+                          Factor_newexpr(
+                            Type(
+                             int
+                            ) [Type]
+                            Expr_expr1single(
+                              Expr1_expr1single(
+                                Term_single(
+                                  Factor_designatorsingle(
+                                    Designator_identsingle(
+                                     size
+                                    ) [Designator_identsingle]
+                                  ) [Factor_designatorsingle]
+                                ) [Term_single]
+                              ) [Expr1_expr1single]
+                            ) [Expr_expr1single]
+                          ) [Factor_newexpr]
+                        ) [Term_single]
+                      ) [Expr1_expr1single]
+                    ) [Expr_expr1single]
+                  ) [Assignment]
+                ) [DesignatorStatement_expr]
+              ) [Statement_designatorstatement]
+              Statement_list_more(
+                Statement_designatorstatement(
+                  DesignatorStatement_expr(
+                    Designator_identsingle(
+                     i
+                    ) [Designator_identsingle]
+                    Assignment(
+                      Expr_expr1single(
+                        Expr1_expr1single(
+                          Term_single(
+                            Factor_numconst(
+                             0
+                            ) [Factor_numconst]
+                          ) [Term_single]
+                        ) [Expr1_expr1single]
+                      ) [Expr_expr1single]
+                    ) [Assignment]
+                  ) [DesignatorStatement_expr]
+                ) [Statement_designatorstatement]
+                Statement_list_more(
+                  Statement_dowhile(
+                    Statement_statementlist(
+                      Statement_list_more(
+                        Statement_designatorstatement(
+                          DesignatorStatement_actpars(
+                            Designator_identmore(
+                             val
+                              More_designator_ident(
+                               putp
+                              ) [More_designator_ident]
+                            ) [Designator_identmore]
+                            ActParsOpenDerived1(
+                            ) [ActParsOpenDerived1]
+                            ActParsPart_single(
+                              ActPars_exprmore(
+                                Expr_expr1single(
+                                  Expr1_expr1single(
+                                    Term_single(
+                                      Factor_numconst(
+                                       0
+                                      ) [Factor_numconst]
+                                    ) [Term_single]
+                                  ) [Expr1_expr1single]
+                                ) [Expr_expr1single]
+                                More_actpars_single(
+                                  Expr_expr1single(
+                                    Expr1_expr1single(
+                                      Term_single(
+                                        Factor_designatorsingle(
+                                          Designator_identsingle(
+                                           i
+                                          ) [Designator_identsingle]
+                                        ) [Factor_designatorsingle]
+                                      ) [Term_single]
+                                    ) [Expr1_expr1single]
+                                  ) [Expr_expr1single]
+                                ) [More_actpars_single]
+                              ) [ActPars_exprmore]
+                            ) [ActParsPart_single]
+                          ) [DesignatorStatement_actpars]
+                        ) [Statement_designatorstatement]
+                        Statement_list_more(
+                          Statement_designatorstatement(
+                            DesignatorStatement_actpars(
+                              Designator_identmore(
+                               val
+                                More_designator_ident(
+                                 putn
+                                ) [More_designator_ident]
+                              ) [Designator_identmore]
+                              ActParsOpenDerived1(
+                              ) [ActParsOpenDerived1]
+                              ActParsPart_single(
+                                ActPars_exprmore(
+                                  Expr_expr1single(
+                                    Expr1_expr1single(
+                                      Term_single(
+                                        Factor_numconst(
+                                         0
+                                        ) [Factor_numconst]
+                                      ) [Term_single]
+                                    ) [Expr1_expr1single]
+                                  ) [Expr_expr1single]
+                                  More_actpars_single(
+                                    Expr_expr1single(
+                                      Expr1_expr1single(
+                                        Term_single(
+                                          Factor_designatorsingle(
+                                            Designator_identsingle(
+                                             i
+                                            ) [Designator_identsingle]
+                                          ) [Factor_designatorsingle]
+                                        ) [Term_single]
+                                      ) [Expr1_expr1single]
+                                    ) [Expr_expr1single]
+                                  ) [More_actpars_single]
+                                ) [ActPars_exprmore]
+                              ) [ActParsPart_single]
+                            ) [DesignatorStatement_actpars]
+                          ) [Statement_designatorstatement]
+                          Statement_list_single(
+                            Statement_designatorstatement(
+                              DesignatorStatement_plusplus(
+                                Designator_identsingle(
+                                 i
+                                ) [Designator_identsingle]
+                              ) [DesignatorStatement_plusplus]
+                            ) [Statement_designatorstatement]
+                          ) [Statement_list_single]
+                        ) [Statement_list_more]
+                      ) [Statement_list_more]
+                    ) [Statement_statementlist]
+                    Condition_single(
+                      CondTerm_single(
+                        CondFact_exprexpr(
+                          Expr_expr1single(
+                            Expr1_expr1single(
+                              Term_single(
+                                Factor_designatorsingle(
+                                  Designator_identsingle(
+                                   i
+                                  ) [Designator_identsingle]
+                                ) [Factor_designatorsingle]
+                              ) [Term_single]
+                            ) [Expr1_expr1single]
+                          ) [Expr_expr1single]
+                          Relop_lower(
+                          ) [Relop_lower]
+                          Expr_expr1single(
+                            Expr1_expr1single(
+                              Term_single(
+                                Factor_designatorsingle(
+                                  Designator_identsingle(
+                                   size
+                                  ) [Designator_identsingle]
+                                ) [Factor_designatorsingle]
+                              ) [Term_single]
+                            ) [Expr1_expr1single]
+                          ) [Expr_expr1single]
+                        ) [CondFact_exprexpr]
+                      ) [CondTerm_single]
+                    ) [Condition_single]
+                  ) [Statement_dowhile]
+                  Statement_list_more(
+                    Statement_designatorstatement(
+                      DesignatorStatement_actpars(
+                        Designator_identsingle(
+                         f
+                        ) [Designator_identsingle]
+                        ActParsOpenDerived1(
+                        ) [ActParsOpenDerived1]
+                        ActParsPart_single(
+                          ActPars_exprmore(
+                            Expr_expr1single(
+                              Expr1_expr1single(
+                                Term_single(
+                                  Factor_designatorsingle(
+                                    Designator_identsingle(
+                                     c
+                                    ) [Designator_identsingle]
+                                  ) [Factor_designatorsingle]
+                                ) [Term_single]
+                              ) [Expr1_expr1single]
+                            ) [Expr_expr1single]
+                            More_actpars_more(
+                              More_actpars_single(
+                                Expr_expr1single(
+                                  Expr1_expr1single(
+                                    Term_single(
+                                      Factor_designatorsingle(
+                                        Designator_identsingle(
+                                         x
+                                        ) [Designator_identsingle]
+                                      ) [Factor_designatorsingle]
+                                    ) [Term_single]
+                                  ) [Expr1_expr1single]
+                                ) [Expr_expr1single]
+                              ) [More_actpars_single]
+                              Expr_expr1single(
+                                Expr1_expr1single(
+                                  Term_single(
+                                    Factor_designatorsingle(
+                                      Designator_identsingle(
+                                       i
+                                      ) [Designator_identsingle]
+                                    ) [Factor_designatorsingle]
+                                  ) [Term_single]
+                                ) [Expr1_expr1single]
+                              ) [Expr_expr1single]
+                            ) [More_actpars_more]
+                          ) [ActPars_exprmore]
+                        ) [ActParsPart_single]
+                      ) [DesignatorStatement_actpars]
+                    ) [Statement_designatorstatement]
+                    Statement_list_more(
+                      Statement_read(
+                        Designator_identsingle(
+                         x
+                        ) [Designator_identsingle]
+                      ) [Statement_read]
+                      Statement_list_more(
+                        Statement_dowhile(
+                          Statement_statementlist(
+                            Statement_list_more(
+                              Statement_if(
+                                Condition_single(
+                                  CondTerm_single(
+                                    CondFact_exprexpr(
+                                      Expr_expr1single(
+                                        Expr1_expr1single(
+                                          Term_single(
+                                            Factor_designatorsingle(
+                                              Designator_identsingle(
+                                               x
+                                              ) [Designator_identsingle]
+                                            ) [Factor_designatorsingle]
+                                          ) [Term_single]
+                                        ) [Expr1_expr1single]
+                                      ) [Expr_expr1single]
+                                      Relop_lowerequal(
+                                      ) [Relop_lowerequal]
+                                      Expr_expr1single(
+                                        Expr1_expr1single(
+                                          Term_single(
+                                            Factor_numconst(
+                                             0
+                                            ) [Factor_numconst]
+                                          ) [Term_single]
+                                        ) [Expr1_expr1single]
+                                      ) [Expr_expr1single]
+                                    ) [CondFact_exprexpr]
+                                  ) [CondTerm_single]
+                                ) [Condition_single]
+                                Statement_break(
+                                ) [Statement_break]
+                              ) [Statement_if]
+                              Statement_list_more(
+                                Statement_ifelse(
+                                  Condition_single(
+                                    CondTerm_more(
+                                      CondFact_exprexpr(
+                                        Expr_expr1single(
+                                          Expr1_expr1single(
+                                            Term_single(
+                                              Factor_numconst(
+                                               0
+                                              ) [Factor_numconst]
+                                            ) [Term_single]
+                                          ) [Expr1_expr1single]
+                                        ) [Expr_expr1single]
+                                        Relop_lowerequal(
+                                        ) [Relop_lowerequal]
+                                        Expr_expr1single(
+                                          Expr1_expr1single(
+                                            Term_single(
+                                              Factor_designatorsingle(
+                                                Designator_identsingle(
+                                                 x
+                                                ) [Designator_identsingle]
+                                              ) [Factor_designatorsingle]
+                                            ) [Term_single]
+                                          ) [Expr1_expr1single]
+                                        ) [Expr_expr1single]
+                                      ) [CondFact_exprexpr]
+                                      More_condterm_single(
+                                        CondFact_exprexpr(
+                                          Expr_expr1single(
+                                            Expr1_expr1single(
+                                              Term_single(
+                                                Factor_designatorsingle(
+                                                  Designator_identsingle(
+                                                   x
+                                                  ) [Designator_identsingle]
+                                                ) [Factor_designatorsingle]
+                                              ) [Term_single]
+                                            ) [Expr1_expr1single]
+                                          ) [Expr_expr1single]
+                                          Relop_lower(
+                                          ) [Relop_lower]
+                                          Expr_expr1single(
+                                            Expr1_expr1single(
+                                              Term_single(
+                                                Factor_designatorsingle(
+                                                  Designator_identsingle(
+                                                   size
+                                                  ) [Designator_identsingle]
+                                                ) [Factor_designatorsingle]
+                                              ) [Term_single]
+                                            ) [Expr1_expr1single]
+                                          ) [Expr_expr1single]
+                                        ) [CondFact_exprexpr]
+                                      ) [More_condterm_single]
+                                    ) [CondTerm_more]
+                                  ) [Condition_single]
+                                  Statement_statementlist(
+                                    Statement_list_single(
+                                      Statement_designatorstatement(
+                                        DesignatorStatement_actpars(
+                                          Designator_identmore(
+                                           val
+                                            More_designator_ident(
+                                             putp
+                                            ) [More_designator_ident]
+                                          ) [Designator_identmore]
+                                          ActParsOpenDerived1(
+                                          ) [ActParsOpenDerived1]
+                                          ActParsPart_single(
+                                            ActPars_exprsingle(
+                                              Expr_expr1single(
+                                                Expr1_expr1more(
+                                                  Term_single(
+                                                    Factor_designatoractpars(
+                                                      Designator_identmore(
+                                                       val
+                                                        More_designator_ident(
+                                                         getp
+                                                        ) [More_designator_ident]
+                                                      ) [Designator_identmore]
+                                                      ActPars_exprsingle(
+                                                        Expr_expr1single(
+                                                          Expr1_expr1single(
+                                                            Term_single(
+                                                              Factor_designatorsingle(
+                                                                Designator_identsingle(
+                                                                 x
+                                                                ) [Designator_identsingle]
+                                                              ) [Factor_designatorsingle]
+                                                            ) [Term_single]
+                                                          ) [Expr1_expr1single]
+                                                        ) [Expr_expr1single]
+                                                      ) [ActPars_exprsingle]
+                                                    ) [Factor_designatoractpars]
+                                                  ) [Term_single]
+                                                  More_expr1_single(
+                                                    Addop_plus(
+                                                    ) [Addop_plus]
+                                                    Term_single(
+                                                      Factor_numconst(
+                                                       1
+                                                      ) [Factor_numconst]
+                                                    ) [Term_single]
+                                                  ) [More_expr1_single]
+                                                ) [Expr1_expr1more]
+                                              ) [Expr_expr1single]
+                                            ) [ActPars_exprsingle]
+                                          ) [ActParsPart_single]
+                                        ) [DesignatorStatement_actpars]
+                                      ) [Statement_designatorstatement]
+                                    ) [Statement_list_single]
+                                  ) [Statement_statementlist]
+                                  Statement_if(
+                                    Condition_single(
+                                      CondTerm_more(
+                                        CondFact_exprexpr(
+                                          Expr_expr1single(
+                                            Expr1_expr1minus(
+                                              Term_single(
+                                                Factor_designatorsingle(
+                                                  Designator_identsingle(
+                                                   size
+                                                  ) [Designator_identsingle]
+                                                ) [Factor_designatorsingle]
+                                              ) [Term_single]
+                                            ) [Expr1_expr1minus]
+                                          ) [Expr_expr1single]
+                                          Relop_lower(
+                                          ) [Relop_lower]
+                                          Expr_expr1single(
+                                            Expr1_expr1single(
+                                              Term_single(
+                                                Factor_designatorsingle(
+                                                  Designator_identsingle(
+                                                   x
+                                                  ) [Designator_identsingle]
+                                                ) [Factor_designatorsingle]
+                                              ) [Term_single]
+                                            ) [Expr1_expr1single]
+                                          ) [Expr_expr1single]
+                                        ) [CondFact_exprexpr]
+                                        More_condterm_single(
+                                          CondFact_exprexpr(
+                                            Expr_expr1single(
+                                              Expr1_expr1single(
+                                                Term_single(
+                                                  Factor_designatorsingle(
+                                                    Designator_identsingle(
+                                                     x
+                                                    ) [Designator_identsingle]
+                                                  ) [Factor_designatorsingle]
+                                                ) [Term_single]
+                                              ) [Expr1_expr1single]
+                                            ) [Expr_expr1single]
+                                            Relop_lower(
+                                            ) [Relop_lower]
+                                            Expr_expr1single(
+                                              Expr1_expr1single(
+                                                Term_single(
+                                                  Factor_numconst(
+                                                   0
+                                                  ) [Factor_numconst]
+                                                ) [Term_single]
+                                              ) [Expr1_expr1single]
+                                            ) [Expr_expr1single]
+                                          ) [CondFact_exprexpr]
+                                        ) [More_condterm_single]
+                                      ) [CondTerm_more]
+                                    ) [Condition_single]
+                                    Statement_statementlist(
+                                      Statement_list_single(
+                                        Statement_designatorstatement(
+                                          DesignatorStatement_actpars(
+                                            Designator_identmore(
+                                             val
+                                              More_designator_ident(
+                                               putn
+                                              ) [More_designator_ident]
+                                            ) [Designator_identmore]
+                                            ActParsOpenDerived1(
+                                            ) [ActParsOpenDerived1]
+                                            ActParsPart_single(
+                                              ActPars_exprsingle(
+                                                Expr_expr1single(
+                                                  Expr1_expr1more(
+                                                    Term_single(
+                                                      Factor_designatoractpars(
+                                                        Designator_identmore(
+                                                         val
+                                                          More_designator_ident(
+                                                           getn
+                                                          ) [More_designator_ident]
+                                                        ) [Designator_identmore]
+                                                        ActPars_exprsingle(
+                                                          Expr_expr1single(
+                                                            Expr1_expr1minus(
+                                                              Term_single(
+                                                                Factor_designatorsingle(
+                                                                  Designator_identsingle(
+                                                                   x
+                                                                  ) [Designator_identsingle]
+                                                                ) [Factor_designatorsingle]
+                                                              ) [Term_single]
+                                                            ) [Expr1_expr1minus]
+                                                          ) [Expr_expr1single]
+                                                        ) [ActPars_exprsingle]
+                                                      ) [Factor_designatoractpars]
+                                                    ) [Term_single]
+                                                    More_expr1_single(
+                                                      Addop_plus(
+                                                      ) [Addop_plus]
+                                                      Term_single(
+                                                        Factor_numconst(
+                                                         1
+                                                        ) [Factor_numconst]
+                                                      ) [Term_single]
+                                                    ) [More_expr1_single]
+                                                  ) [Expr1_expr1more]
+                                                ) [Expr_expr1single]
+                                              ) [ActPars_exprsingle]
+                                            ) [ActParsPart_single]
+                                          ) [DesignatorStatement_actpars]
+                                        ) [Statement_designatorstatement]
+                                      ) [Statement_list_single]
+                                    ) [Statement_statementlist]
+                                  ) [Statement_if]
+                                ) [Statement_ifelse]
+                                Statement_list_single(
+                                  Statement_read(
+                                    Designator_identsingle(
+                                     x
+                                    ) [Designator_identsingle]
+                                  ) [Statement_read]
+                                ) [Statement_list_single]
+                              ) [Statement_list_more]
+                            ) [Statement_list_more]
+                          ) [Statement_statementlist]
+                          Condition_single(
+                            CondTerm_single(
+                              CondFact_expr(
+                                Expr_expr1single(
+                                  Expr1_expr1single(
+                                    Term_single(
+                                      Factor_boolconst(
+                                       true
+                                      ) [Factor_boolconst]
+                                    ) [Term_single]
+                                  ) [Expr1_expr1single]
+                                ) [Expr_expr1single]
+                              ) [CondFact_expr]
+                            ) [CondTerm_single]
+                          ) [Condition_single]
+                        ) [Statement_dowhile]
+                        Statement_list_single(
+                          Statement_print(
+                            Expr_expr1full(
+                              Expr1_expr1single(
+                                Term_more(
+                                  Factor_designatorsingle(
+                                    Designator_identsingle(
+                                     x
+                                    ) [Designator_identsingle]
+                                  ) [Factor_designatorsingle]
+                                  More_term_single(
+                                    Mulop_times(
+                                    ) [Mulop_times]
+                                    Factor_numconst(
+                                     0
+                                    ) [Factor_numconst]
+                                  ) [More_term_single]
+                                ) [Term_more]
+                              ) [Expr1_expr1single]
+                              Expr1_expr1single(
+                                Term_single(
+                                  Factor_charconst(
+                                   -
+                                  ) [Factor_charconst]
+                                ) [Term_single]
+                              ) [Expr1_expr1single]
+                              Expr1_expr1single(
+                                Term_single(
+                                  Factor_charconst(
+                                   +
+                                  ) [Factor_charconst]
+                                ) [Term_single]
+                              ) [Expr1_expr1single]
+                            ) [Expr_expr1full]
+                          ) [Statement_print]
+                        ) [Statement_list_single]
+                      ) [Statement_list_more]
+                    ) [Statement_list_more]
+                  ) [Statement_list_more]
+                ) [Statement_list_more]
+              ) [Statement_list_more]
+            ) [Statement_list_more]
+          ) [Statement_list_more]
+        ) [Statement_list_more]
+      ) [MethodDecl_varsstats]
+    ) [MethodDecl_list_single]
+  ) [MethodDecl_list_more]
+) [Program_declsmethods]
+INFO  01:33:46,020 - ===================================

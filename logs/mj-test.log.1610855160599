@@ -1,0 +1,8 @@
+INFO  04:39:23,350 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  04:39:23,393 - #2 program
+INFO  04:39:23,393 - #48 test301
+INFO  04:39:23,393 - #48 pauk
+INFO  04:39:23,394 - #47 5
+ERROR 04:39:23,394 - 
+Sintaksna greska na liniji 5: 5
+ERROR 04:39:23,394 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5: 5

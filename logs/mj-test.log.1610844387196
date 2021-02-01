@@ -1,0 +1,279 @@
+INFO  01:46:22,593 - Compiling source file: C:\Users\dv170455d\eclipse-workspace\MJCompiler\test\test301.mj
+INFO  01:46:22,754 - #2 program
+INFO  01:46:22,755 - #48 test302
+INFO  01:46:22,755 - #10 const
+INFO  01:46:22,757 - #48 int
+INFO  01:46:22,757 - #48 jedan
+INFO  01:46:22,760 - #21 =
+INFO  01:46:22,760 - #47 1
+INFO  01:46:22,760 - #23 ;
+INFO  01:46:22,762 - #48 int
+INFO  01:46:22,763 - #48 i
+INFO  01:46:22,763 - #23 ;
+INFO  01:46:22,764 - #48 bool
+INFO  01:46:22,766 - #48 ibool
+INFO  01:46:22,766 - #23 ;
+INFO  01:46:22,766 - #48 int
+INFO  01:46:22,766 - #48 niz
+INFO  01:46:22,766 - #43 [
+INFO  01:46:22,766 - #44 ]
+INFO  01:46:22,767 - #23 ;
+INFO  01:46:22,767 - #26 {
+INFO  01:46:22,767 - #5 void
+INFO  01:46:22,768 - #48 main
+INFO  01:46:22,769 - #24 (
+INFO  01:46:22,769 - #25 )
+INFO  01:46:22,769 - #26 {
+INFO  01:46:22,769 - #13 do
+INFO  01:46:22,769 - #26 {
+INFO  01:46:22,771 - #11 if
+INFO  01:46:22,771 - #24 (
+INFO  01:46:22,772 - #48 i
+INFO  01:46:22,772 - #32 ==
+INFO  01:46:22,773 - #47 3
+INFO  01:46:22,774 - #25 )
+INFO  01:46:22,775 - #26 {
+INFO  01:46:22,777 - #48 i
+INFO  01:46:22,777 - #40 ++
+INFO  01:46:22,777 - #23 ;
+INFO  01:46:22,778 - #18 continue
+INFO  01:46:22,778 - #23 ;
+INFO  01:46:22,779 - #27 }
+INFO  01:46:22,780 - #11 if
+INFO  01:46:22,781 - #24 (
+INFO  01:46:22,782 - #48 i
+INFO  01:46:22,782 - #32 ==
+INFO  01:46:22,782 - #47 4
+INFO  01:46:22,782 - #25 )
+INFO  01:46:22,782 - #6 break
+INFO  01:46:22,782 - #23 ;
+INFO  01:46:22,782 - #27 }
+INFO  01:46:22,783 - #14 while
+INFO  01:46:22,783 - #24 (
+INFO  01:46:22,784 - #48 i
+INFO  01:46:22,784 - #36 <
+INFO  01:46:22,784 - #47 10
+INFO  01:46:22,785 - #25 )
+INFO  01:46:22,785 - #23 ;
+INFO  01:46:22,785 - #27 }
+INFO  01:46:22,785 - #27 }
+INFO  01:46:22,787 - Program_declsmethods(
+  ProgName(
+   test302
+  ) [ProgName]
+  Decl_list_morevar(
+    Decl_list_morevar(
+      Decl_list_morevar(
+        Decl_list_singleconst(
+          ConstDecl_singlenumber(
+            TypePart(
+              Type(
+               int
+              ) [Type]
+            ) [TypePart]
+            More_constdecl_single(
+              Single_constdecl(
+               jedan
+                Val_constdecl_number(
+                 1
+                ) [Val_constdecl_number]
+              ) [Single_constdecl]
+            ) [More_constdecl_single]
+          ) [ConstDecl_singlenumber]
+        ) [Decl_list_singleconst]
+        VarDecl(
+          TypePart(
+            Type(
+             int
+            ) [Type]
+          ) [TypePart]
+          More_vardecl_single(
+            Single_vardecl_single(
+             i
+            ) [Single_vardecl_single]
+          ) [More_vardecl_single]
+        ) [VarDecl]
+      ) [Decl_list_morevar]
+      VarDecl(
+        TypePart(
+          Type(
+           bool
+          ) [Type]
+        ) [TypePart]
+        More_vardecl_single(
+          Single_vardecl_single(
+           ibool
+          ) [Single_vardecl_single]
+        ) [More_vardecl_single]
+      ) [VarDecl]
+    ) [Decl_list_morevar]
+    VarDecl(
+      TypePart(
+        Type(
+         int
+        ) [Type]
+      ) [TypePart]
+      More_vardecl_single(
+        Single_vardecl_brackets(
+         niz
+        ) [Single_vardecl_brackets]
+      ) [More_vardecl_single]
+    ) [VarDecl]
+  ) [Decl_list_morevar]
+  MethodDecl_list_single(
+    MethodDecl_stats(
+      MethodUnique_empty(
+        MethodType_void(
+        ) [MethodType_void]
+       main
+      ) [MethodUnique_empty]
+      Statement_list_single(
+        Statement_dowhile(
+          DoOpen(
+          ) [DoOpen]
+          Statement_statementlist(
+            Statement_list_more(
+              Statement_if(
+                IfPart(
+                  IfOpen(
+                  ) [IfOpen]
+                  IfClose(
+                    Condition_single(
+                      CondTerm_single(
+                        CondFact_exprexpr(
+                          Expr_expr1single(
+                            Expr1_single(
+                              Term_single(
+                                Factor_designator(
+                                  Designator_single(
+                                   i
+                                  ) [Designator_single]
+                                ) [Factor_designator]
+                              ) [Term_single]
+                            ) [Expr1_single]
+                          ) [Expr_expr1single]
+                          Relop_equalequal(
+                          ) [Relop_equalequal]
+                          Expr_expr1single(
+                            Expr1_single(
+                              Term_single(
+                                Factor_const(
+                                  Val_constdecl_number(
+                                   3
+                                  ) [Val_constdecl_number]
+                                ) [Factor_const]
+                              ) [Term_single]
+                            ) [Expr1_single]
+                          ) [Expr_expr1single]
+                        ) [CondFact_exprexpr]
+                      ) [CondTerm_single]
+                    ) [Condition_single]
+                  ) [IfClose]
+                ) [IfPart]
+                Statement_statementlist(
+                  Statement_list_more(
+                    Statement_designatorstatement(
+                      DesignatorStatement_plusplus(
+                        Designator_single(
+                         i
+                        ) [Designator_single]
+                      ) [DesignatorStatement_plusplus]
+                    ) [Statement_designatorstatement]
+                    Statement_list_single(
+                      Statement_continue(
+                      ) [Statement_continue]
+                    ) [Statement_list_single]
+                  ) [Statement_list_more]
+                ) [Statement_statementlist]
+                MaybeElse_empty(
+                ) [MaybeElse_empty]
+              ) [Statement_if]
+              Statement_list_single(
+                Statement_if(
+                  IfPart(
+                    IfOpen(
+                    ) [IfOpen]
+                    IfClose(
+                      Condition_single(
+                        CondTerm_single(
+                          CondFact_exprexpr(
+                            Expr_expr1single(
+                              Expr1_single(
+                                Term_single(
+                                  Factor_designator(
+                                    Designator_single(
+                                     i
+                                    ) [Designator_single]
+                                  ) [Factor_designator]
+                                ) [Term_single]
+                              ) [Expr1_single]
+                            ) [Expr_expr1single]
+                            Relop_equalequal(
+                            ) [Relop_equalequal]
+                            Expr_expr1single(
+                              Expr1_single(
+                                Term_single(
+                                  Factor_const(
+                                    Val_constdecl_number(
+                                     4
+                                    ) [Val_constdecl_number]
+                                  ) [Factor_const]
+                                ) [Term_single]
+                              ) [Expr1_single]
+                            ) [Expr_expr1single]
+                          ) [CondFact_exprexpr]
+                        ) [CondTerm_single]
+                      ) [Condition_single]
+                    ) [IfClose]
+                  ) [IfPart]
+                  Statement_break(
+                  ) [Statement_break]
+                  MaybeElse_empty(
+                  ) [MaybeElse_empty]
+                ) [Statement_if]
+              ) [Statement_list_single]
+            ) [Statement_list_more]
+          ) [Statement_statementlist]
+          WhileOpen(
+          ) [WhileOpen]
+          Condition_single(
+            CondTerm_single(
+              CondFact_exprexpr(
+                Expr_expr1single(
+                  Expr1_single(
+                    Term_single(
+                      Factor_designator(
+                        Designator_single(
+                         i
+                        ) [Designator_single]
+                      ) [Factor_designator]
+                    ) [Term_single]
+                  ) [Expr1_single]
+                ) [Expr_expr1single]
+                Relop_lower(
+                ) [Relop_lower]
+                Expr_expr1single(
+                  Expr1_single(
+                    Term_single(
+                      Factor_const(
+                        Val_constdecl_number(
+                         10
+                        ) [Val_constdecl_number]
+                      ) [Factor_const]
+                    ) [Term_single]
+                  ) [Expr1_single]
+                ) [Expr_expr1single]
+              ) [CondFact_exprexpr]
+            ) [CondTerm_single]
+          ) [Condition_single]
+        ) [Statement_dowhile]
+      ) [Statement_list_single]
+    ) [MethodDecl_stats]
+  ) [MethodDecl_list_single]
+) [Program_declsmethods]
+INFO  01:46:22,788 - 
+===================================
+
+INFO  01:46:22,805 - 
+===================================
+
